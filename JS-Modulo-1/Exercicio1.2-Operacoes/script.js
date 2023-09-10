@@ -1,13 +1,13 @@
 let numero1 = window.prompt('digite o primeiro numero')
-parseFloat(numero1)
+let num1 =parseFloat(numero1)
 
 let numero2 = window.prompt('digite o segundo numero')
-parseFloat(numero2)
+let num2 = parseFloat(numero2)
 
-soma = numero1 + numero2
-subtracao = numero1 - numero2
-multiplicacao = numero1 * numero2
-divisao = numero1 / numero2
+soma = num1 + num2
+subtracao = num1 - num2
+multiplicacao = num1 * num2
+divisao = num1 / num2
 
 document.write('<h1>Soma:'+ soma + '</h1>')
 

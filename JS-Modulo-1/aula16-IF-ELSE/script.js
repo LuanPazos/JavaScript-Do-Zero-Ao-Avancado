@@ -11,3 +11,6 @@ if(idade > 18){
   alert('..')
 }
 
+// // uma forma direta de fazer um if else ->
+// const resultado = (6===6)? 'verdadeiro' : 'falso'
+// console.log(resultado)

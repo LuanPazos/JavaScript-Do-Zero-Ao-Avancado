@@ -1,12 +1,9 @@
 let nome1 = window.prompt('Digite o nome do personagem de ataque')
-let poderAtaqueS = window.prompt('Poder ataque:')
-let poderAtaque = parseFloat(poderAtaqueS)
+let poderAtaque = parseFloat(prompt('Poder ataque:'))
 
-let nome2 = window.prompt('Digite o nome do personagem de defesa')
-let vidaS=window.prompt('Digite a vida:')
-let vida = parseFloat(vidaS)
-let poderDefesaS = window.prompt('Poder de defesa:')
-let poderDefesa = parseFloat(poderDefesaS)
+let nome2 = prompt('Digite o nome do personagem de defesa')
+let vida = parseFloat(prompt('Digite a vida:'))
+const poderDefesa = parseFloat(prompt('Poder de defesa:')) 
 let escudo = window.prompt('possui escudo?')
 
 let dano = 0

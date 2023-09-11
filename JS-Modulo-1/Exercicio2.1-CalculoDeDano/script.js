@@ -1,19 +1,24 @@
 let nome1 = window.prompt('Digite o nome do personagem de ataque')
-let poderAtaque = window.prompt('Poder ataque:')
+let poderAtaqueS = window.prompt('Poder ataque:')
+let poderAtaque = parseFloat(poderAtaqueS)
 
 let nome2 = window.prompt('Digite o nome do personagem de defesa')
-let vida=window.prompt('Digite a vida:')
-let poderDefesa = window.prompt('Poder de defesa:')
+let vidaS=window.prompt('Digite a vida:')
+let vida = parseFloat(vidaS)
+let poderDefesaS = window.prompt('Poder de defesa:')
+let poderDefesa = parseFloat(poderDefesaS)
 let escudo = window.prompt('possui escudo?')
 
+let dano = 0
+
 if (poderAtaque > poderDefesa && escudo== 'n') {
-  let dano = poderAtaque - poderDefesa
+  dano = poderAtaque - poderDefesa
   alert(`${nome1} atacou ${nome2} com ${dano} de dano`)
 } else if (poderAtaque > poderDefesa && escudo== 's') {
-  let dano = (poderAtaque - poderDefesa) / 2
+  dano = (poderAtaque - poderDefesa) / 2
   alert(`${nome1} atacou ${nome2} com ${dano} de dano`)
 } else{
-  let dano = 0
+  dano = 0
   alert(`${nome1} atacou ${nome2} com ${dano} de dano`)
 }
 

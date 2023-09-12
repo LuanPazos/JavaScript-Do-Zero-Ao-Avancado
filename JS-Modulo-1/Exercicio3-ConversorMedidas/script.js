@@ -14,16 +14,22 @@ console.log(medida)
 switch (unidade) {
   case 1:
     alert(`Resultado de ${medida}m = ${medida *1000}mm`)
+    break
   case 2:
     alert(`Resultado de ${medida}m = ${medida *100}cm`)
+    break
   case 3:
     alert(`Resultado de ${medida}m = ${medida *10}dm`)
+    break
   case 4:
     alert(`Resultado de ${medida}m = ${medida *0.1}dam`)
+    break
   case 5:
     alert(`Resultado de ${medida}m = ${medida *0.01}hm`)
+    break
   case 6:
     alert(`Resultado de ${medida}m = ${medida *0.001}km`)
+    break
   default:
     alert(`ERROR: Unidade de ${unidade}`)
 }

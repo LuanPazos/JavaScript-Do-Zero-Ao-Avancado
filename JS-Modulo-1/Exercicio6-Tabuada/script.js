@@ -1,4 +1,4 @@
-const numero = parseFloat(prompt("De qual número você deseja calcular a tabuada?"))
+const numero = Number(prompt("De qual número você deseja calcular a tabuada?"))
 let resultado = ""
 
 for (let fator = 1; fator <= 20; fator++) {

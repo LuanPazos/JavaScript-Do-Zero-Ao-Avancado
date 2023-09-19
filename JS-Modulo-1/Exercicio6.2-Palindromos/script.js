@@ -1,8 +1,8 @@
 const palavra = prompt("Informe a palavra:")
 let palavraInvertida = ""
 
-for (let i = palavra.length - 1; i >= 0; i--) {
-  palavraInvertida += palavra[i]
+for (let count = palavra.length - 1; count >= 0; count--) {
+  palavraInvertida += palavra[count]
 }
 
 if (palavra === palavraInvertida) {

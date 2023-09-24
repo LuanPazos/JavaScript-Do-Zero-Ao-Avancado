@@ -41,3 +41,8 @@ const sociedade = hobbits.concat(outros, "Boromir")
 console.log(sociedade)
 console.log(hobbits)
 console.log(outros)
+
+// splice: Permite remover elementos em qualquer posição do array e substituir por novos
+const elementosRemovidos = sociedade.splice(indice, 1, "Gandalf, o Cinzento")
+console.log(elementosRemovidos)
+console.log(sociedade)

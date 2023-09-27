@@ -1,36 +1,44 @@
 let quantidade = 0
 let opcao = 0
 let pilha = []
-let novaCarta= ''
+let novaCarta = ''
 let cartaRemovida = ''
 
-do{
+do {
 
   opcao = Number(prompt(
     'O baralho tem ' + quantidade + ' cartas: \n' +
     pilha +
-    '\nEscolha uma opcao:'+
+    '\nEscolha uma opcao:' +
     '\n1- adicionar uma carta' +
-    '\n2- Pegar uma carta'+
+    '\n2- Pegar uma carta' +
     '\n3- Encerrar'
   ))
-  switch (opcao){
+  switch (opcao) {
     case 1:
-      novaCarta= prompt('Digite uma carta para adicionar ao topo do baralho: ')
+      novaCarta = prompt('Digite uma carta para adicionar ao topo do baralho: ')
       pilha.push(novaCarta)
-      quantidade ++
+      quantidade++
       break
+
     case 2:
       cartaRemovida = pilha.pop()
-      alert('a carta: '+ cartaRemovida + ' foi removida')
-      quantidade --
+      if (cartaRemovida) {
+        alert('a carta: ' + cartaRemovida + ' foi removida')
+        quantidade--
+
+      } else {
+        alert('Não há carta para ser removida')
+      }
       break
+
     case 3:
       alert('Encerrando...')
       break
+
     default:
       alert('Opção invalida')
       break
   }
-  
-} while(opcao!=3)
+
+} while (opcao != 3)

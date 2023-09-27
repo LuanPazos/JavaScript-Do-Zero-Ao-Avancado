@@ -17,11 +17,11 @@ do{
   switch (opcao){
     case 1:
       novaCarta= prompt('Digite uma carta para adicionar ao topo do baralho: ')
-      pilha.unshift(novaCarta)
+      pilha.push(novaCarta)
       quantidade ++
       break
     case 2:
-      cartaRemovida = pilha.shift()
+      cartaRemovida = pilha.pop()
       alert('a carta: '+ cartaRemovida + ' foi removida')
       quantidade --
       break

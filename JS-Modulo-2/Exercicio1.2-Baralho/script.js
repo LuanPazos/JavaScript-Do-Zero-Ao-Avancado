@@ -24,7 +24,6 @@ do {
       // O programa estava removendo mesmo nao havendo cartas, o if (cartaRemovida) checa se o valor esta retornando um valor booleano verdadeiro
       if (cartaRemovida) {
         alert('a carta: ' + cartaRemovida + ' foi removida')
-
       } else {
         alert('Não há carta para ser removida')
       }

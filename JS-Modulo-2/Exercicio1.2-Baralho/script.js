@@ -1,24 +1,22 @@
-let quantidade = 0
 let opcao = 0
 let pilha = []
 let novaCarta = ''
 let cartaRemovida = ''
 
 do {
-
   opcao = Number(prompt(
-    'O baralho tem ' + quantidade + ' cartas: \n' +
+    'O baralho tem ' + pilha.length + ' cartas: \n' +
     pilha +
     '\nEscolha uma opcao:' +
     '\n1- adicionar uma carta' +
     '\n2- Pegar uma carta' +
     '\n3- Encerrar'
   ))
+
   switch (opcao) {
     case 1:
       novaCarta = prompt('Digite uma carta para adicionar ao topo do baralho: ')
       pilha.push(novaCarta)
-      quantidade++
       break
 
     case 2:
@@ -26,7 +24,6 @@ do {
       // O programa estava removendo mesmo nao havendo cartas, o if (cartaRemovida) checa se o valor esta retornando um valor booleano verdadeiro
       if (cartaRemovida) {
         alert('a carta: ' + cartaRemovida + ' foi removida')
-        quantidade--
 
       } else {
         alert('Não há carta para ser removida')

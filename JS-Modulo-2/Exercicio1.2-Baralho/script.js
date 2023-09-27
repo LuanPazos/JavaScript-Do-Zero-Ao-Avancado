@@ -15,7 +15,7 @@ do {
 
   switch (opcao) {
     case 1:
-      novaCarta = prompt('Digite uma carta para adicionar ao topo do baralho: ')
+      novaCarta = prompt('Qual é a carta?')
       pilha.push(novaCarta)
       break
 
@@ -23,7 +23,7 @@ do {
       cartaRemovida = pilha.pop()
       // O programa estava removendo mesmo nao havendo cartas, o if (cartaRemovida) checa se o valor esta retornando um valor booleano verdadeiro
       if (cartaRemovida) {
-        alert('a carta: ' + cartaRemovida + ' foi removida')
+        alert(`A carta ${cartaRemovida} foi removida`)
       } else {
         alert('Não há carta para ser removida')
       }

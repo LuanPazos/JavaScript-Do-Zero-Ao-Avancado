@@ -1,10 +1,10 @@
-function calcularMedia(a,b){
-  const media = (a+b)/2
-  return media
-}
+// function calcularMedia(a,b){
+//   const media = (a+b)/2
+//   return media
+// }
 
-const resultado = calcularMedia(7,2)
-console.log(resultado)
+// const resultado = calcularMedia(7,2)
+// console.log(resultado)
 
 function criarProduto(nome, preco){
   const produto ={
@@ -14,3 +14,5 @@ function criarProduto(nome, preco){
   }
   return produto
 }
+
+console.log(criarProduto('Notebook intel core i5 8gb', 2500))

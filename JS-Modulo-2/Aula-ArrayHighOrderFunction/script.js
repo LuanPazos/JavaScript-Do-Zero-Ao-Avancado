@@ -16,13 +16,13 @@ for (let i = 0; i < personagens.length; i++) {
 }
 console.log(nomes)
 
-//  usando maps
+//  usando maps (pegando os nomes)
  const nomes2 = personagens.map(function(personagem){
    return personagem.nome
  })
- console.log(nomes2)
+ console.log(`Metodo Map`,nomes2)
 
-//  sem usar filter
+//  sem usar filter 
 const orcsSemFilter = []
 
 for (let i = 0; i < personagens.length; i++) {
@@ -32,17 +32,17 @@ for (let i = 0; i < personagens.length; i++) {
 }
 console.log(orcsSemFilter)
 
-//  usando filter
+//  usando filter (filtrando orcs)
 const orcs = personagens.filter(function(personagem){
   return personagem.raca === "Orc"
 })
-console.log(orcs)
+console.log(`Metodo filter`,orcs)
 
-//  usando reduce
+//  usando reduce (soma de níveis)
 const nivelTotal = personagens.reduce(function(acumulador, personagem){
   return acumulador + personagem.nivel
 }, 0)
-console.log(nivelTotal)
+console.log(`Metodo reduce`,nivelTotal)
 
 const racas = personagens.reduce(function(acumulador, personagem){
   if (acumulador[personagem.raca]) {
@@ -52,5 +52,10 @@ const racas = personagens.reduce(function(acumulador, personagem){
   }
   return acumulador
 }, {})
+console.log(`Metodo reduce`,racas)
 
-console.log(racas)
+// Usando o método sort (ordenação)
+const personagensOrdenados = personagens.sort(function(personagem1, personagem2){
+  return personagem1.nivel - personagem2.nivel
+})
+console.log(`Metodo sort`, personagensOrdenados)

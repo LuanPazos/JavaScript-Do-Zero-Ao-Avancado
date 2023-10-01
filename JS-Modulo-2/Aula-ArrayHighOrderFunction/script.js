@@ -52,3 +52,5 @@ const racas = personagens.reduce(function(acumulador, personagem){
   }
   return acumulador
 }, {})
+
+console.log(racas)

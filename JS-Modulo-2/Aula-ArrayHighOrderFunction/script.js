@@ -55,7 +55,14 @@ const racas = personagens.reduce(function(acumulador, personagem){
 console.log(`Metodo reduce`,racas)
 
 // Usando o método sort (ordenação)
-const personagensOrdenados = personagens.sort(function(personagem1, personagem2){
+// const personagensOrdenados = personagens.sort(function(personagem1, personagem2){
+//   return personagem1.nivel - personagem2.nivel
+// })
+// console.log(`Metodo sort`, personagensOrdenados)
+
+// nota: o sort altera o array original. é preciso usar o slice para copiar o array antes de ordenar:
+const personagensOrdenados2 = personagens.slice().sort(function(personagem1, personagem2){
   return personagem1.nivel - personagem2.nivel
 })
-console.log(`Metodo sort`, personagensOrdenados)
+console.log(`Metodo sort com slice`, personagensOrdenados2)
+console.log(`array original:`,personagens)

@@ -15,6 +15,6 @@ function onBlur() {
 }
 
 function onClick() {
-  alert('Clicou') 
+  alert('Clicou')
 }
 

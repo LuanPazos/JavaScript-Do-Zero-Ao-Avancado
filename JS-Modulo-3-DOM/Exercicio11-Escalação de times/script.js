@@ -32,5 +32,6 @@ function removePlayer(){
     document.getElementById(`team-list`).removeChild(playerToRemove)
     // zerando os valores das caixas de input:
     document.getElementById(`numberToRemove`).value = ''
+    //
   }
 }

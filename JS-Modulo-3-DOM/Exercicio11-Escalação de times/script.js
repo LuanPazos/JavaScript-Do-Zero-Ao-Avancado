@@ -22,6 +22,7 @@ function addPlayer() {
   }
 }
 
+
 function removePlayer(){
   const number = document.getElementById(`numberToRemove`).value
   const playerToRemove = document.getElementById(`player-${number}`)
